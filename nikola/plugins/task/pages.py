@@ -35,6 +35,14 @@ from nikola.utils import config_changed, LOGGER
 class RenderPages(Task):
     """Render pages into output."""
 
+    branch_coverage = {
+    "branch_1": False,
+    "branch_2": False,  
+    "branch_3": False, 
+    "branch_4": False,
+    "branch_5": False   
+    }
+
     name = "render_pages"
 
     def gen_tasks(self):
@@ -52,19 +60,24 @@ class RenderPages(Task):
         for lang in kw["translations"]:
             index_paths[lang] = False
             if not self.site.config["DISABLE_INDEXES"]:
+                self.branch_coverage["branch_1"] = True
                 index_paths[lang] = os.path.normpath(os.path.join(self.site.config['OUTPUT_FOLDER'],
                                                      self.site.path('index', '', lang=lang)))
 
         for lang in kw["translations"]:
             for post in self.site.timeline:
                 if not kw["show_untranslated_posts"] and not post.is_translation_available(lang):
+                    self.branch_coverage["branch_2"] = True
                     continue
                 if post.is_post:
+                    self.branch_coverage["branch_3"] = True
                     context = {'pagekind': ['post_page']}
                 else:
+                    self.branch_coverage["branch_4"] = True
                     context = {'pagekind': ['story_page', 'page_page']}
                 for task in self.site.generic_page_renderer(lang, post, kw["filters"], context):
                     if task['name'] == index_paths[lang]:
+                        self.branch_coverage["branch_5"] = True
                         # Issue 3022
                         LOGGER.error(
                             "Post {0!r}: output path ({1}) conflicts with the blog index ({2}). "
@@ -74,3 +87,12 @@ class RenderPages(Task):
                     task['basename'] = self.name
                     task['task_dep'] = ['render_posts']
                     yield task
+
+
+    def report_coverage(self):
+        for branch, hit in self.branch_coverage.items():
+            print(f"{branch}: {'covered' if hit else 'not covered'}")
+
+    def reset_coverage(self):
+        for key in self.branch_coverage:
+            self.branch_coverage[key] = False 
