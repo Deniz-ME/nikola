@@ -35,6 +35,14 @@ from nikola import utils
 class Sources(Task):
     """Copy page sources into the output."""
 
+    branch_coverage = {
+    "branch_1": False,
+    "branch_2": False,  
+    "branch_3": False, 
+    "branch_4": False,
+    "branch_5": False   
+    }
+
     name = "render_sources"
 
     def gen_tasks(self):
@@ -49,20 +57,25 @@ class Sources(Task):
         self.site.scan_posts()
         yield self.group_task()
         if self.site.config['COPY_SOURCES']:
+            self.branch_coverage["branch_1"] = True
             for lang in kw["translations"]:
                 for post in self.site.timeline:
                     if not kw["show_untranslated_posts"] and lang not in post.translated_to:
+                        self.branch_coverage["branch_2"] = True
                         continue
                     if post.meta('password'):
+                        self.branch_coverage["branch_3"] = True
                         continue
                     output_name = os.path.join(
                         kw['output_folder'], post.destination_path(
                             lang, post.source_ext(True)))
                     # do not publish PHP sources
                     if post.source_ext(True) == post.compiler.extension():
+                        self.branch_coverage["branch_4"] = True
                         continue
                     source = post.translated_source_path(lang)
                     if source is not None and os.path.isfile(source):
+                        self.branch_coverage["branch_5"] = True
                         yield {
                             'basename': 'render_sources',
                             'name': os.path.normpath(output_name),
@@ -72,3 +85,11 @@ class Sources(Task):
                             'clean': True,
                             'uptodate': [utils.config_changed(kw, 'nikola.plugins.task.sources')],
                         }
+    
+    def report_coverage(self):
+        for branch, hit in self.branch_coverage.items():
+            print(f"{branch}: {'covered' if hit else 'not covered'}")
+
+    def reset_coverage(self):
+        for key in self.branch_coverage:
+            self.branch_coverage[key] = False 
