@@ -3,7 +3,7 @@ from nikola.plugins.task.pages import RenderPages
 from unittest.mock import MagicMock
 
 @pytest.fixture(scope="module")
-def pages_mock_site():
+def pages_mock_post():
     pages = RenderPages()
     pages.site = MagicMock()
     pages.site.config = {
