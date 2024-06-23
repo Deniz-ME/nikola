@@ -90,7 +90,3 @@ class Sources(Task):
     def report_coverage(self):
         for branch, hit in self.branch_coverage.items():
             print(f"{branch}: {'covered' if hit else 'not covered'}")
-
-    def reset_coverage(self):
-        for key in self.branch_coverage:
-            self.branch_coverage[key] = False 
