@@ -39,6 +39,15 @@ from nikola import utils
 
 EXIF_TAG_NAMES = {}
 
+branch_coverage = {
+    "filter_exif_1": False,   # 1st if branch for 
+    "filter_exif_2": False,   # 2nd if branch
+    "filter_exif_3": False,   # 3rd if branch
+    "filter_exif_4": False,   # 1st elif branch
+    "filter_exif_5": False,   # 2nd elif branch
+    "filter_exif_6": False,   # 1st else branch
+    "filter_exif_7": False,   # 4th if branch
+}
 
 class ImageProcessor(object):
     """Apply image operations."""
@@ -56,10 +65,12 @@ class ImageProcessor(object):
         """Filter EXIF data as described in the documentation."""
         # Scenario 1: keep everything
         if whitelist == {'*': '*'}:
+            branch_coverage["filter_exif_1"] = True
             return exif
 
         # Scenario 2: keep nothing
         if whitelist == {}:
+            branch_coverage["filter_exif_2"] = True
             return None
 
         # Scenario 3: keep some
@@ -67,20 +78,29 @@ class ImageProcessor(object):
         exif = exif.copy()  # Don't modify in-place, it's rude
         for k in list(exif.keys()):
             if not isinstance(exif[k], dict):
+                branch_coverage["filter_exif_3"] = True
                 pass  # At least thumbnails have no fields
             elif k not in whitelist:
+                branch_coverage["filter_exif_4"] = True
                 exif.pop(k)  # Not whitelisted, remove
             elif k in whitelist and whitelist[k] == '*':
+                branch_coverage["filter_exif_5"] = True
                 # Fully whitelisted, keep all
                 pass
             else:
+                branch_coverage["filter_exif_6"] = True
                 # Partially whitelisted
                 for tag in list(exif[k].keys()):
                     if EXIF_TAG_NAMES[tag] not in whitelist[k]:
+                        branch_coverage["filter_exif_7"] = True
                         exif[k].pop(tag)
 
         return exif or None
-
+    
+    def print_coverage():
+        for branch, hit in branch_coverage.items():
+            print(f"{branch} was {'hit' if hit else 'not hit'}")
+            
     def resize_image(self, src, dst=None, max_size=None, bigger_panoramas=True, preserve_exif_data=False, exif_whitelist={}, preserve_icc_profiles=False, dst_paths=None, max_sizes=None):
         """Make a copy of the image in the requested size(s).
 

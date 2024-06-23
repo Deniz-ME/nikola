@@ -15,6 +15,7 @@ from nikola.utils import (
     TemplateHookRegistry,
     TranslatableSetting,
     NikolaPygmentsHTML,
+    LocaleBorg,
     demote_headers,
     get_asset_path,
     get_crumbs,
@@ -645,3 +646,23 @@ def test_parselinenos():
 
 def test_nikola_find_formatter_class_returns_pygments_class():
     assert NikolaPygmentsHTML == nikola_find_formatter_class("html")
+
+
+def test_not_self_translated():
+    obj = TranslatableSetting(name="test", inp="hello", translations={})
+    obj.lang = None
+    assert obj.get_lang() == "en"
+
+    
+def test_get_lang_locale_borg():
+    locales = {"fr": "French"}
+    LocaleBorg.initialize(locales, "en")
+
+    obj = TranslatableSetting(name="test", inp={"en": "hello", "fr": "bonjour"}, translations={"fr": "bonjour"})
+    obj.lang = None
+
+    locale_borg = LocaleBorg()
+    locale_borg.set_locale("fr")
+
+    assert obj.get_lang() == "fr"
+    TranslatableSetting.print_coverage()
