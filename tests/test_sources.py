@@ -22,6 +22,5 @@ def source_mock_post():
     return sources
 
 def test_mock_post(source_mock_post):
-    source_mock_post.reset_coverage()
     list(source_mock_post.gen_tasks())
     source_mock_post.report_coverage()
