@@ -34,5 +34,34 @@ def build(target_dir):
 
     with cd(target_dir):
         __main__.main(["build"])
-    ImageProcessor.print_coverage()
 
+def test_star_whitelist():
+    obj = ImageProcessor()
+    whitelist = {'*': '*'}
+    assert obj.filter_exif(1, whitelist) == 1
+
+def test_no_dict_value():
+    obj = ImageProcessor()
+    exif = {0: 100}
+    whitelist = {0: '*'}
+    result = obj.filter_exif(exif, whitelist)
+    assert result == {0: 100}
+
+def test_not_in_whitelist():
+    obj = ImageProcessor()
+    exif = {0: {2: 'hello'}, 1: {3: 200}}
+    whitelist = {5: '*'}
+    obj.filter_exif(exif, whitelist)
+
+def test_in_whitelist():
+    obj = ImageProcessor()
+    exif = {0: {2: 'hello'}, 1: {3: 200}}
+    whitelist = {0: '*'}
+    obj.filter_exif(exif, whitelist)
+    
+def test_in_whitelist22():
+    obj = ImageProcessor()
+    exif = {0: {2: 'hello'}, 1: {3: 200}}
+    whitelist = {0: {2: 'hello'}}
+    obj.filter_exif(exif, whitelist)
+    ImageProcessor.print_coverage()
