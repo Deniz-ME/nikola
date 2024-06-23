@@ -3,7 +3,7 @@ from nikola.plugins.task.sources import Sources
 from unittest.mock import MagicMock
 
 @pytest.fixture(scope="module")
-def source_mock_site():
+def source_mock_post():
     
     sources = Sources()
     sources.site = MagicMock()
