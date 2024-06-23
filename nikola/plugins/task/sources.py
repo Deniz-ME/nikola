@@ -53,6 +53,7 @@ class Sources(Task):
             "default_lang": self.site.config["DEFAULT_LANG"],
             "show_untranslated_posts": self.site.config['SHOW_UNTRANSLATED_POSTS'],
         }
+        print("This is the sources file")
 
         self.site.scan_posts()
         yield self.group_task()
