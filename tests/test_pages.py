@@ -25,6 +25,5 @@ def pages_mock_post():
     return pages
 
 def test_mock_post(pages_mock_post):
-    pages_mock_post.reset_coverage()
     list(pages_mock_post.gen_tasks())
     pages_mock_post.report_coverage()
