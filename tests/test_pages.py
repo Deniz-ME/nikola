@@ -24,7 +24,7 @@ def pages_mock_post():
     pages.site.timeline = [mock_post]
     return pages
 
-def test_mock_post(pages_mock_site):
-    pages_mock_site.reset_coverage()
-    list(pages_mock_site.gen_tasks())
-    pages_mock_site.report_coverage()
+def test_mock_post(pages_mock_post):
+    pages_mock_post.reset_coverage()
+    list(pages_mock_post.gen_tasks())
+    pages_mock_post.report_coverage()
