@@ -143,7 +143,7 @@ def configure_logging(logging_mode: LoggingMode = LoggingMode.NORMAL) -> None:
 
 def print_coverage_configure():
     for branch, hit in branch_coverage_configure.items():
-    print(f"configure {branch} was {'hit' if hit else 'not hit'}")
+        print(f"configure {branch} was {'hit' if hit else 'not hit'}")
 
 def reset_coverage_configure():
     for key in branch_coverage_configure:
