@@ -15,6 +15,7 @@ from nikola.utils import (
     TemplateHookRegistry,
     TranslatableSetting,
     NikolaPygmentsHTML,
+    LocaleBorg,
     demote_headers,
     get_asset_path,
     get_crumbs,
@@ -645,3 +646,7 @@ def test_parselinenos():
 
 def test_nikola_find_formatter_class_returns_pygments_class():
     assert NikolaPygmentsHTML == nikola_find_formatter_class("html")
+    TranslatableSetting.print_coverage()
+
+
+    

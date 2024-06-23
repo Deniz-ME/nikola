@@ -125,6 +125,13 @@ STDERR_HANDLER = None
 
 USE_SLUGIFY = True
 
+branch_coverage = {
+    "get_lang_1": False,   # if branch for 
+    "get_lang_2": False,   # elif branch
+    "get_lang_3": False,   # else branch
+    "get_lang_4": False,   # try branch
+    "get_lang_5": False,   # exception branch
+}
 
 def req_missing(names, purpose, python=True, optional=False):
     """Log that we are missing some requirements.
@@ -290,14 +297,23 @@ class TranslatableSetting(object):
     def get_lang(self):
         """Return the language that should be used to retrieve settings."""
         if self.lang:
+            branch_coverage["get_lang_1"] = True
             return self.lang
         elif not self.translated:
+            branch_coverage["get_lang_2"] = True
             return self.default_lang
         else:
+            branch_coverage["get_lang_3"] = True
             try:
+                branch_coverage["get_lang_4"] = True
                 return LocaleBorg().current_lang
             except AttributeError:
+                branch_coverage["get_lang_5"] = True
                 return self.default_lang
+    
+    def print_coverage():
+        for branch, hit in branch_coverage.items():
+            print(f"{branch} was {'hit' if hit else 'not hit'}")
 
     def __call__(self, lang=None):
         """Return the value in the requested language.
