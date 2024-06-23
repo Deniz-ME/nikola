@@ -4,8 +4,8 @@ import os
 
 import pytest
 
-from nikola import __main__
-
+from nikola import __main__ 
+from nikola.image_processing import ImageProcessor
 from .helper import cd, patch_config
 from .test_demo_build import prepare_demo_site
 from .test_empty_build import (  # NOQA
@@ -34,3 +34,5 @@ def build(target_dir):
 
     with cd(target_dir):
         __main__.main(["build"])
+    ImageProcessor.print_coverage()
+
