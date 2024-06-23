@@ -54,13 +54,15 @@ class RenderPages(Task):
             "show_untranslated_posts": self.site.config['SHOW_UNTRANSLATED_POSTS'],
             "demote_headers": self.site.config['DEMOTE_HEADERS'],
         }
+
+        print("This is the pages file")
         self.site.scan_posts()
         yield self.group_task()
         index_paths = {}
         for lang in kw["translations"]:
             index_paths[lang] = False
             if not self.site.config["DISABLE_INDEXES"]:
-                self.branch_coverage["branch_1"] = True
+                self.branch_coverage["branch_1"] = True                
                 index_paths[lang] = os.path.normpath(os.path.join(self.site.config['OUTPUT_FOLDER'],
                                                      self.site.path('index', '', lang=lang)))
 
