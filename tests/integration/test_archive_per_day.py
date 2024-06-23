@@ -59,7 +59,7 @@ def test_in_whitelist():
     whitelist = {0: '*'}
     obj.filter_exif(exif, whitelist)
     
-def test_in_whitelist22():
+def test_last_if():
     obj = ImageProcessor()
     exif = {0: {2: 'hello'}, 1: {3: 200}}
     whitelist = {0: {2: 'hello'}}
