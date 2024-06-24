@@ -8,28 +8,32 @@ def command_status():
 
 @pytest.mark.skip(reason="None")
 def test_days_branch(command_status):
-    print("\n test with 2 days 3 hours:")
+    print("\ntest with 2 days 3 hours:")
     result = command_status.human_time(timedelta(days=2, hours=3))
-    print(f"this is the result: ${result}")
+    print(f"this is the result: {result}")
+    assert result == "2 days and 3 hours"
 
 @pytest.mark.skip(reason="None")
 def test_hours_branch(command_status):
     print("test with 4 hours 20 minutes:")
     result = command_status.human_time(timedelta(hours=4, minutes=20))
-    print(f"this is the result: ${result}")
+    print(f"this is the result: {result}")
+    assert result == "4 hours and 20 minutes"
 
 
 @pytest.mark.skip(reason="None")
 def test_minutes_branch(command_status):
     print("test with 15 minutes:")
     result = command_status.human_time(timedelta(minutes=15))
-    print(f"this is the result: ${result}")
+    print(f"this is the result: {result}")
+    assert result == "15 minutes"
 
 @pytest.mark.skip(reason="None")
 def test_seconds_branch(command_status):
     print("test with 0 seconds:")
     result = command_status.human_time(timedelta(seconds=0))
-    print(f"this is the result: ${result}")
+    print(f"this is the result: {result}")
+    assert result == False
 
 def test_combined(command_status):
     command_status.reset_coverage()
