@@ -40,7 +40,7 @@ the class ColorfulFormatter(logging.Formatter) in nikola\log.py
 
 Commit link can be found 
 
-[here ](https://github.com/Deniz-ME/nikola/pull/2/commits/fe7127e1fa04377f9d699d8288f0ab29e0a62fd1)
+[here](https://github.com/getnikola/nikola/commit/981e0f7b806cb892077c1057ecaf4c0595fa8a61)
 
 I added a dictionary that has all the branches found in the method. When a branch is reached, the dictionary updates the specific branch. You can call a print coverage to see whether these branches are hit (covered).
 ![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed.png)
@@ -179,7 +179,7 @@ Group member: Aziz
 
 Test: test_custom.py
 
-Link to commit
+[Link](https://github.com/getnikola/nikola/commit/76cfa5cd5b54faa7061dd04e323a83cdc3406a6a) to commit
 
 Old coverage results:
 
@@ -197,7 +197,7 @@ After updating the tests, the branches are reached by getting calls with differe
 
 Test: test_plugins.py
 
-Link to commit
+[Link](https://github.com/getnikola/nikola/commit/a6c6ab3e590652d68416cf6e7099cdbcf99cef4e) to commit
 
 Old coverage results:
 
