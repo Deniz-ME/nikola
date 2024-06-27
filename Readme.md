@@ -238,11 +238,9 @@ We also see that the total coverage file went from 78% to 82% so that got improv
 
 
 
-Group member name: Deniz Erdoğan
+<Group member name:> Deniz Erdoğan
 
-<Test 1>
-    
-<test_sources.py>
+<Test 1:> test_sources.py
     
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/985a833c0093bd0a299459ff446e842718e35383 
@@ -250,9 +248,9 @@ https://github.com/getnikola/nikola/commit/985a833c0093bd0a299459ff446e842718e35
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
 
+Provide a screenshot of the new coverage results
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/0c551157-2fea-4fad-83ef-35ba0851e1a5)
 
-<Provide a screenshot of the new coverage results>
-![image](https://github.com/Deniz-ME/nikola/assets/122368681/6986bc77-2c8c-4cc9-b282-c17a6b329cff)
 
 I have now run the test file I have made, it covers branch 1, 2 and 3. This means that the not covered 2 and 3 from before are covered too!
 
