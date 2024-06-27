@@ -98,8 +98,11 @@ Function 1 name: Gen_tasks(self), The path to the file where the function is -> 
 
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements : https://github.com/getnikola/nikola/commit/92d2980b8a555220a787ea1a4e0c241a89f7ad1a
 
+(Github only shows the changes of the last commit(unfortunately), you can see the whole code if you click the expand up button or expand down you are able to see the whole code)
+
 Provide a screenshot of the coverage results output by the instrumentation
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
+
 
 As you can see, branches 1,4,5 are hit without any test code written by me. 5 is hit multiple times because this one is in a for loop. Command that is used to get this is pytest -s
  
@@ -107,6 +110,8 @@ Function 2 name: Gen_tasks(self). The path to the file where the function is -> 
 
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>       
 https://github.com/getnikola/nikola/commit/31542c31f410f4e5ca74f88314b31670a17c7885
+
+(Github only shows the changes of the last commit(unfortunately), you can see the whole code if you click the expand up button or expand down you are able to see the whole code)
 
 Provide a screenshot of the coverage results output by the instrumentation: ![image](https://github.com/Deniz-ME/nikola/assets/122368681/0686104c-0ebb-4220-9259-bcd1425a826a)
 
@@ -245,6 +250,8 @@ We also see that the total coverage file went from 78% to 82% so that got improv
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/985a833c0093bd0a299459ff446e842718e35383 
 
+(Github only shows the changes of the last commit(unfortunately), you can see the whole code if you click the expand up button or expand down you are able to see the whole code)
+
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
 
@@ -273,6 +280,8 @@ The coverage improvement went up by 40%, so it is now 100%. Every branch is cove
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/7a0da9628a16637d9e30233b6b3443ac0d9c571d 
+
+(Github only shows the changes of the last commit(unfortunately), you can see the whole code if you click the expand up button or expand down you are able to see the whole code)
 
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/a1f6b429-16f2-4227-bbbb-021156242564)
