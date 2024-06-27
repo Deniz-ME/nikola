@@ -59,6 +59,7 @@ colorful_wrap_coverage = {
     "wrap_in_color_2": False,
     "wrap_in_color_3": False,
     "wrap_in_color_4": False,
+    "wrap_in_color_5": False
 }
 
 
@@ -86,6 +87,7 @@ class ColorfulFormatter(logging.Formatter):
         elif record.levelno >= logging.INFO:
             colorful_wrap_coverage["wrap_in_color_4"] = True
             return "\033[1m{}\033[0m"
+        colorful_wrap_coverage["wrap_in_color_5"] = True
         return "\033[37m{}\033[0m"
     
     def print_colorful_wrap_coverage():
