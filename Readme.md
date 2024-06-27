@@ -29,8 +29,8 @@ the class ColorfulFormatter(logging.Formatter) in nikola\log.py
 Commit link can be found [here ](https://github.com/Deniz-ME/nikola/pull/2/commits/fe7127e1fa04377f9d699d8288f0ab29e0a62fd1)
 
 I added a dictionary that has all the branches found in the method. When a branch is reached, the dictionary updates the specific branch. You can call a print coverage to see whether these branches are hit (covered).
-
-
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed.png)
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed2.png)
 
 
 Function name: _execute(self, options={}, args=None) found in the class CommandVersion(Command) in nikola\plugins\command\version.py
@@ -38,7 +38,8 @@ Commit link can be found [here](https://github.com/Deniz-ME/nikola/pull/2/commit
 
 The same method of instrumentation used in function 1 is applied here. This method required injecting a new branch to overwrite a specific value in the method, this is required to reach the branch of an outdated version. This branch is only reached by the test’s unique flag, this means that the functionality is left unaffected.
 
-
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed3.png)
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed4.png)
 
 
 <Group member name>
@@ -142,10 +143,13 @@ Link to commit
 
 Old coverage results:
 
-
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed5.png)
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed6.png)
 
 New coverage results:
 
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed7.png)
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed8.png)
 
 
 In the old coverage, only the first branch is hit during runtime, the other branches are not reached. The coverage of the file log.py is around 71%. 
@@ -157,10 +161,13 @@ Link to commit
 
 Old coverage results:
 
-
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed9.png)
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed10.png)
 
 New coverage results:
 
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed11.png)
+![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed12.png)
 
 
 In the old coverage, none of the branches are reached in the original test, this makes sense as the current tests do not use the flag ‘check’ for version number. This can also be seen before the branch printing, where Nikola v8.3.1 is printed but not checked for new versions. 
