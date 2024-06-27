@@ -270,13 +270,16 @@ The coverage improvement went up by 40%, so it is now 100%. Every branch is cove
 
 <Function 2 name>
 <test_pages.py>
+
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/7a0da9628a16637d9e30233b6b3443ac0d9c571d 
-<Provide a screenshot of the old coverage results (the same as you already showed above)>
- ![image](https://github.com/Deniz-ME/nikola/assets/122368681/a1f6b429-16f2-4227-bbbb-021156242564)
 
-<Provide a screenshot of the new coverage results>
-![image](https://github.com/Deniz-ME/nikola/assets/122368681/81ba99a9-c175-49ba-85f7-6124c4febdc6)
+<Provide a screenshot of the old coverage results (the same as you already showed above)>
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/a1f6b429-16f2-4227-bbbb-021156242564)
+
+
+<Provide a screenshot of the new coverage results
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/8ded10e8-9c25-429a-8ca5-2947f67cfa0a)
 
 
 I have now run the test file I have made, it covers branch 1, 2 and 3. This means that the not covered 2 is covered too now!
@@ -290,7 +293,9 @@ If you look at the improved coverage:
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/02cdf715-1ad3-4d91-9935-efc7e3552d0f)
 
 It says 95%,it covers almost all the branches except one.
- <State the coverage improvement with a number and elaborate on why the coverage is improved> 
+
+<State the coverage improvement with a number and elaborate on why the coverage is improved
+
 The coverage improvement went up by 20%, so it is now 80%. Every branch except the last is covered in the function. I have made a mock post so that it imitates being a post with certain aspects which then will satisfy the if branch which I was able to cover.
 
 
