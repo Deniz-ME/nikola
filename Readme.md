@@ -17,7 +17,8 @@ Programming language: Python
 ## Coverage measurement
 ### Existing tool
 
-<Inform the name of the existing tool that was executed and how it was executed
+<Inform the name of the existing tool that was executed and how it was executed 
+
 To measure the coverage, we made use of pytest and pytest-cov and other libraries for dependencies such as coverage and better visualization such as pytest-html.
 To execute, we do pytest -s. We use -s to show the print statements as well.
 
