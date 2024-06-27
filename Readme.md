@@ -38,7 +38,9 @@ Group member: Aziz
 Function name: wrap_in_color(self, record: logging.LogRecord) -> str found in
 the class ColorfulFormatter(logging.Formatter) in nikola\log.py
 
-Commit link can be found [here ](https://github.com/Deniz-ME/nikola/pull/2/commits/fe7127e1fa04377f9d699d8288f0ab29e0a62fd1)
+Commit link can be found 
+
+[here ](https://github.com/Deniz-ME/nikola/pull/2/commits/fe7127e1fa04377f9d699d8288f0ab29e0a62fd1)
 
 I added a dictionary that has all the branches found in the method. When a branch is reached, the dictionary updates the specific branch. You can call a print coverage to see whether these branches are hit (covered).
 ![image](https://github.com/Deniz-ME/nikola/blob/AzizBranch/logo/unnamed.png)
