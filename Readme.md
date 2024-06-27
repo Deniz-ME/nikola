@@ -80,6 +80,11 @@ When we check this with the lines in the function we see that branch1, branch 3,
  
 When we check  this with our function we see that this is true and only branch 2 gets hit before our tests this equals a branch coverage of 25%
 
+
+
+
+
+
 Group member name: Deniz Erdoğan
 
 Function 1 name: Gen_tasks(self), The path to the file where the function is -> “nikola.plugins.task.sources”. In the Sources class.
@@ -100,15 +105,17 @@ Provide a screenshot of the coverage results output by the instrumentation: [SEP
 
 As you can see, branches 1,3, 4 are hit without any test code written by me. Command that is used to get this is pytest -s
 
-<Group member name>
-Ilyaas Wardere
-<Function 1 name>
-	get_lang(self)
-<Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 
-https://github.com/Deniz-ME/nikola/commit/e5537fd73bfb17c3a914b7d633fe628f58834548
 
-<Provide a screenshot of the coverage results output by the instrumentation>
+
+
+Group member name: Ilyaas Wardere
+
+Function 1 name: get_lang(self)
+
+Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements: https://github.com/Deniz-ME/nikola/commit/e5537fd73bfb17c3a914b7d633fe628f58834548
+
+Provide a screenshot of the coverage results output by the instrumentation
 
 	
 <Function 2 name>
