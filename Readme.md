@@ -83,17 +83,14 @@ When we check  this with our function we see that this is true and only branch 2
 Group member name
 - Deniz Erdoğan
 Function 1 name
--  Gen_tasks(self). 
-    The path to the file where the function is -> “nikola.plugins.task.sources”. In the Sources class.
+- Gen_tasks(self), The path to the file where the function is -> “nikola.plugins.task.sources”. In the Sources class.
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements    
-     https://github.com/getnikola/nikola/commit/92d2980b8a555220a787ea1a4e0c241a89f7ad1a
+- https://github.com/getnikola/nikola/commit/92d2980b8a555220a787ea1a4e0c241a89f7ad1a
 Provide a screenshot of the coverage results output by the instrumentation
-    ![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
+- ![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
 
 As you can see, branches 1,4,5 are hit without any test code written by me. 5 is hit multiple times because this one is in a for loop. Command that is used to get this is pytest -s
  
-
-
 Function 2 name
 - Gen_tasks(self). The path to the file where the function is -> “nikola.plugins.task.pages”. In the RenderPages class.
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>       
