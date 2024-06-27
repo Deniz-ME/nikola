@@ -108,7 +108,8 @@ Function 2 name: Gen_tasks(self). The path to the file where the function is -> 
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>       
 https://github.com/getnikola/nikola/commit/31542c31f410f4e5ca74f88314b31670a17c7885
 
-Provide a screenshot of the coverage results output by the instrumentation: [SEP2.png](https://github.com/Deniz-ME/nikola/blob/DenizBranch/SEP2.png?raw=true) 
+Provide a screenshot of the coverage results output by the instrumentation: ![image](https://github.com/Deniz-ME/nikola/assets/122368681/0686104c-0ebb-4220-9259-bcd1425a826a)
+
 
 As you can see, branches 1,3, 4 are hit without any test code written by me. Command that is used to get this is pytest -s
 
@@ -235,38 +236,59 @@ The branch coverage went from 25 % to 100 % as all the branches are now hit.
 We also see that the total coverage file went from 78% to 82% so that got improved because more lines are covered now.
 
 <Group member name>
+
 Deniz Erdogan
+
 <Test 1>
+    
 <test_sources.py>
+    
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/985a833c0093bd0a299459ff446e842718e35383 
 
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
 
 
 <Provide a screenshot of the new coverage results>
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/6986bc77-2c8c-4cc9-b282-c17a6b329cff)
 
--        I have now run the test file I have made, it covers branch 1, 2 and 3. This means that the not covered 2 and 3 from before are covered too!
+I have now run the test file I have made, it covers branch 1, 2 and 3. This means that the not covered 2 and 3 from before are covered too!
 
-This is without the new test file which covers branch 2 and 3. Branch 2 and 3 are 66-68 and 70-72.(The other lines are functions for coverage check)
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/a99a19b7-005b-4e1d-9b1e-6a312ddf5314)
+
+This(^) is without the new test file which covers branch 2 and 3. Branch 2 and 3 are 66-68 and 70-72.(The other lines are functions for coverage check)
 If you look at the improved coverage:
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/d5736aa2-8690-422f-848a-87688f7ecff9)
 
 It says 100%, all the branches are covered.
+
+
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
+
 The coverage improvement went up by 40%, so it is now 100%. Every branch is covered in the function. I have made a mock post so that it imitates being a post with certain aspects which then will satisfy the if branches which needed to be covered.
+
+
 <Function 2 name>
 <test_pages.py>
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/7a0da9628a16637d9e30233b6b3443ac0d9c571d 
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
- 
+ ![image](https://github.com/Deniz-ME/nikola/assets/122368681/a1f6b429-16f2-4227-bbbb-021156242564)
+
 <Provide a screenshot of the new coverage results>
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/81ba99a9-c175-49ba-85f7-6124c4febdc6)
 
--         I have now run the test file I have made, it covers branch 1, 2 and 3. This means that the not covered 2  is covered too!
 
+I have now run the test file I have made, it covers branch 1, 2 and 3. This means that the not covered 2 is covered too now!
 
-This is without the new test file which covers branch 2. Branch 2 is 72-73.(The other lines are functions for coverage check)
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/93db1131-af34-45ac-a12a-7eb79544b484)
+
+This(^) is without the new test file which covers branch 2. Branch 2 is 72-73.(The other lines are functions for coverage check)
+
 If you look at the improved coverage:
+
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/02cdf715-1ad3-4d91-9935-efc7e3552d0f)
 
 It says 95%,it covers almost all the branches except one.
  <State the coverage improvement with a number and elaborate on why the coverage is improved> 
