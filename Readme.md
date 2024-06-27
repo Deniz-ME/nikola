@@ -53,7 +53,9 @@ https://github.com/getnikola/nikola/commit/b16a7a8dcbdf59978db7d1f6a4fa6c4c49048
 
 <Provide a screenshot of the coverage results output by the instrumentation>
 Before I added a test there was no test for this function. As can be seen when running this line (this is when I run all the tests without the test I added) :
-![image](https://github.com/Deniz-ME/nikola/assets/122440225/29211a2f-863a-4f39-8f04-5a3086aa7195)
+(for some the image via markdown doesn't work and the link has to be clicked for example this one:)
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/8247db58-fae6-4313-9f04-f5a7b0db9ad1)
+
 	We see in this screenshot that lines 170 to 183 were missed
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/0b2d42a6-0dba-4a50-8db4-afb09805b2c7)
 We can see in this screenshot that these are all the lines of the human_time function 	so we can conclude that this function isn’t being tested yet
@@ -72,7 +74,7 @@ in the log.py file
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 https://github.com/Deniz-ME/nikola/commit/5643b3b52568dd57d126e30572c9ebd0bde12227
 <Provide a screenshot of the coverage results output by the instrumentation>
-![image](https://github.com/Deniz-ME/nikola/assets/122440225/1b12c46e-8eea-4eaa-9272-35f3c1603c86)
+![image](https://github.com/Deniz-ME/nikola/blob/Derra_Branch/logo/ass1_pic_1.png)
 When we check the function without our newly made test function we see this: 
 we see this: 
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/ba7792e8-0be8-4995-a5a8-a4df723e446a)
@@ -189,7 +191,9 @@ https://github.com/Deniz-ME/nikola/commit/73318f4da289602722b5a2f30f45aee8e53c42
 (for an explanation read the text above)
 
 <Provide a screenshot of the new coverage results>
-![image](https://github.com/Deniz-ME/nikola/assets/122440225/7a0b58f4-eb65-4c8b-857c-f20e3d6263fe)
+(for some the image via markdown doesn't work and the link has to be clicked for example this one:)
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/de8ee700-c638-4ddc-a41d-a8028378b03d)
+
 
 
 we see that now all the branches are covered and with the print statements that all the results are true and the function does what it is supposed to (when you enter in 0 seconds the function should return False)
@@ -197,7 +201,8 @@ we see that now all the branches are covered and with the print statements that 
 
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
 we went from a branch coverage of 0 % to a branch coverage of 100% as now all the branches have been covered
-![image](https://github.com/Deniz-ME/nikola/assets/122440225/fa8f4ff3-58dd-4a02-a035-279688465b0d)
+(for some the image via markdown doesn't work and the link has to be clicked for example this one:)
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/d19de05a-be21-4492-b3e0-039b618a1bbb)
 
 We also see now that the total coverage of the file is 41% (which first was 20%) so there has been a total 21% increase in the total file coverage.
 
