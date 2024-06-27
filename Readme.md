@@ -52,14 +52,14 @@ https://github.com/getnikola/nikola/commit/b16a7a8dcbdf59978db7d1f6a4fa6c4c49048
 
 <Provide a screenshot of the coverage results output by the instrumentation>
 Before I added a test there was no test for this function. As can be seen when running this line (this is when I run all the tests without the test I added) :
-
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/29211a2f-863a-4f39-8f04-5a3086aa7195)
 	We see in this screenshot that lines 170 to 183 were missed
-
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/0b2d42a6-0dba-4a50-8db4-afb09805b2c7)
 We can see in this screenshot that these are all the lines of the human_time function 	so we can conclude that this function isn’t being tested yet
-
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/b2d094db-21a3-406a-b37a-45f6a87f6e4e)
 To still show the instrumentation with our report_coverage function we just need to call the function manually ourselves and it should show that no branch is being hit as of right now (because it didn’t get tested).
 doing this we get this as expected: 
-
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/c03f3993-1f0f-4b69-a52e-b44fa2fd2771)
 
 
 none of the branches have been covered yet.
@@ -71,13 +71,17 @@ in the log.py file
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 https://github.com/Deniz-ME/nikola/commit/5643b3b52568dd57d126e30572c9ebd0bde12227
 <Provide a screenshot of the coverage results output by the instrumentation>
-
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/1b12c46e-8eea-4eaa-9272-35f3c1603c86)
 When we check the function without our newly made test function we see this: 
 we see this: 
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/ba7792e8-0be8-4995-a5a8-a4df723e446a)
+
 We also notice a total file coverage of 78 %
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/b70e656b-e9cc-44ed-a9fc-bcdf820699c7)
 
 When we check this with the lines in the function we see that branch1, branch 3, and branch 4 are not being covered 
- 
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/cdac9c6a-eee7-4f46-aba2-ffa5eb89cae5)
+
 When we check  this with our function we see that this is true and only branch 2 gets hit before our tests this equals a branch coverage of 25%
 
 
@@ -171,17 +175,22 @@ After updating the tests, we have fully covered the file version.py (thus the me
 https://github.com/Deniz-ME/nikola/commit/73318f4da289602722b5a2f30f45aee8e53c42cc
 	The test can be found in the test_human.py file
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/55e6c63c-c933-4ca3-b022-6e27882228ae)
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/67e7e8be-c328-4142-9ab1-44f4d3355dbf)
 
 
 (for an explanation read the text above)
 
 <Provide a screenshot of the new coverage results>
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/7a0b58f4-eb65-4c8b-857c-f20e3d6263fe)
+
 
 we see that now all the branches are covered and with the print statements that all the results are true and the function does what it is supposed to (when you enter in 0 seconds the function should return False)
 
 
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
 we went from a branch coverage of 0 % to a branch coverage of 100% as now all the branches have been covered
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/fa8f4ff3-58dd-4a02-a035-279688465b0d)
 
 We also see now that the total coverage of the file is 41% (which first was 20%) so there has been a total 21% increase in the total file coverage.
 
@@ -191,6 +200,9 @@ We also see now that the total coverage of the file is 41% (which first was 20%)
 https://github.com/Deniz-ME/nikola/commit/9a58ee2fc61f17f48e8706e67f905aa59e2ca2f3
 The test can be found in the test_configure_logs.py file
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/4186ec80-b92b-4e3a-9cee-b8b21e16b661)
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/2ada5424-24b9-45f4-bf0a-5e9550af6833)
+
 (For an explanation read the text for function 2)
 
 
@@ -199,6 +211,9 @@ The test can be found in the test_configure_logs.py file
 
 	<Provide a screenshot of the new coverage results>
 when we run the function with our function we see that all the branches get hit
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/7f36e9ec-4eb5-4b1d-bec6-339e96a85b4a)
+![image](https://github.com/Deniz-ME/nikola/assets/122440225/de436fd6-af27-4b05-a7a5-903a468637b9)
+
 	
 
 
