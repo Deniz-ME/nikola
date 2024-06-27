@@ -34,7 +34,7 @@ I added a dictionary that has all the branches found in the method. When a branc
 
 
 Function name: _execute(self, options={}, args=None) found in the class CommandVersion(Command) in nikola\plugins\command\version.py
-Commit link can be found here
+Commit link can be found [here](https://github.com/Deniz-ME/nikola/pull/2/commits/dd3b3e69e499bd81a0898f6737f145134508e1cc)
 
 The same method of instrumentation used in function 1 is applied here. This method required injecting a new branch to overwrite a specific value in the method, this is required to reach the branch of an outdated version. This branch is only reached by the test’s unique flag, this means that the functionality is left unaffected.
 
