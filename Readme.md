@@ -81,23 +81,23 @@ When we check this with the lines in the function we see that branch1, branch 3,
 When we check  this with our function we see that this is true and only branch 2 gets hit before our tests this equals a branch coverage of 25%
 
 Group member name
-- Deniz Erdoğan
+ Deniz Erdoğan
 Function 1 name
-- Gen_tasks(self), The path to the file where the function is -> “nikola.plugins.task.sources”. In the Sources class.
+Gen_tasks(self), The path to the file where the function is -> “nikola.plugins.task.sources”. In the Sources class.
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements    
-- https://github.com/getnikola/nikola/commit/92d2980b8a555220a787ea1a4e0c241a89f7ad1a
+ https://github.com/getnikola/nikola/commit/92d2980b8a555220a787ea1a4e0c241a89f7ad1a
 Provide a screenshot of the coverage results output by the instrumentation
-- ![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
 
 As you can see, branches 1,4,5 are hit without any test code written by me. 5 is hit multiple times because this one is in a for loop. Command that is used to get this is pytest -s
  
 Function 2 name
-- Gen_tasks(self). The path to the file where the function is -> “nikola.plugins.task.pages”. In the RenderPages class.
+Gen_tasks(self). The path to the file where the function is -> “nikola.plugins.task.pages”. In the RenderPages class.
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>       
-- https://github.com/getnikola/nikola/commit/31542c31f410f4e5ca74f88314b31670a17c7885
+https://github.com/getnikola/nikola/commit/31542c31f410f4e5ca74f88314b31670a17c7885
 
 Provide a screenshot of the coverage results output by the instrumentation
-- [SEP2.png](https://github.com/Deniz-ME/nikola/blob/DenizBranch/SEP2.png?raw=true) 
+[SEP2.png](https://github.com/Deniz-ME/nikola/blob/DenizBranch/SEP2.png?raw=true) 
 As you can see, branches 1,3, 4 are hit without any test code written by me. Command that is used to get this is pytest -s
 
 <Group member name>
