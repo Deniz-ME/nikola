@@ -269,12 +269,14 @@ We also see that the total coverage file went from 78% to 82% so that got improv
 
 
 
-<Group member name:> Deniz Erdoğan
+<Group member name: Deniz Erdoğan
 
 <Test 1:> test_sources.py
     
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/985a833c0093bd0a299459ff446e842718e35383 
+
+(I have not added any asserts, this because of the fact that I cannot add an assert. In my branches there is nothing happening in the branch it just has a continue statement which prompts the for loop to go to next iteration.)
 
 (Github only shows the changes of the last commit(unfortunately), you can see the whole code if you click the expand up button or expand down you are able to see the whole code)
 
@@ -290,6 +292,7 @@ I have now run the test file I have made, it covers branch 1, 2 and 3. This mean
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/a99a19b7-005b-4e1d-9b1e-6a312ddf5314)
 
 This(^) is without the new test file which covers branch 2 and 3. Branch 2 and 3 are 66-68 and 70-72.(The other lines are functions for coverage check)
+
 If you look at the improved coverage:
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/d5736aa2-8690-422f-848a-87688f7ecff9)
 
@@ -306,6 +309,8 @@ The coverage improvement went up by 40%, so it is now 100%. Every branch is cove
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
 https://github.com/getnikola/nikola/commit/7a0da9628a16637d9e30233b6b3443ac0d9c571d 
+
+(I have not added any asserts, this because of the fact that I cannot add an assert. In my branches there is nothing happening in the branch it just has a continue statement which prompts the for loop to go to next iteration.)
 
 (Github only shows the changes of the last commit(unfortunately), you can see the whole code if you click the expand up button or expand down you are able to see the whole code)
 
