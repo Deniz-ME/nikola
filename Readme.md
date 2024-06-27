@@ -7,18 +7,27 @@ Name: Nikola
 URL: https://github.com/Deniz-ME/nikola
 
 Number of lines of code and the tool used to count it: 106 KLOC using Lizard
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/e2d5cce4-43d9-41a7-a985-164aa38a9387)
+Total nloc shows 105984 lines of code
+
+
 
 Programming language: Python
 
 ## Coverage measurement
-
 ### Existing tool
 
+<Inform the name of the existing tool that was executed and how it was executed
 To measure the coverage, we made use of pytest and pytest-cov and other libraries for dependencies such as coverage and better visualization such as pytest-html.
 To execute, we do pytest -s. We use -s to show the print statements as well.
 
+<Show the coverage results provided by the existing tool with a screenshot
 
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/e58f6e95-964d-4fc6-b356-49eafec4ab28)
 
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/6974a939-89c9-4c08-a8d0-7250413ae280)
+
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/a3caebba-e9c3-48c5-a6ab-7de70d67efdf)
 
 
 ### Your own coverage tool
