@@ -94,16 +94,21 @@ in the log.py file
 
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 https://github.com/Deniz-ME/nikola/commit/5643b3b52568dd57d126e30572c9ebd0bde12227
-<Provide a screenshot of the coverage results output by the instrumentation>
+
+<Provide a screenshot of the coverage results output by the instrumentation
+
 ![image](https://github.com/Deniz-ME/nikola/blob/Derra_Branch/logo/ass1_pic_1.png)
+
 When we check the function without our newly made test function we see this: 
-we see this: 
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/ba7792e8-0be8-4995-a5a8-a4df723e446a)
 
 We also notice a total file coverage of 78 %
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/b70e656b-e9cc-44ed-a9fc-bcdf820699c7)
 
 When we check this with the lines in the function we see that branch1, branch 3, and branch 4 are not being covered 
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/cdac9c6a-eee7-4f46-aba2-ffa5eb89cae5)
 
 When we check  this with our function we see that this is true and only branch 2 gets hit before our tests this equals a branch coverage of 25%
@@ -122,6 +127,7 @@ Show a patch (diff) or a link to a commit made in your forked repository that sh
 (Github only shows the changes of the last commit(unfortunately), you can see the whole code if you click the expand up button or expand down you are able to see the whole code)
 
 Provide a screenshot of the coverage results output by the instrumentation
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122368681/4ee5f69f-93f3-4df8-89e2-11d2cf40248e)
 
 
