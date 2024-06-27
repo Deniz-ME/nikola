@@ -263,7 +263,7 @@ If you look at the improved coverage:
 It says 100%, all the branches are covered.
 
 
-<State the coverage improvement with a number and elaborate on why the coverage is improved>
+State the coverage improvement with a number and elaborate on why the coverage is improved
 
 The coverage improvement went up by 40%, so it is now 100%. Every branch is covered in the function. I have made a mock post so that it imitates being a post with certain aspects which then will satisfy the if branches which needed to be covered.
 
