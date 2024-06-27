@@ -334,6 +334,7 @@ test_get_lang_locale_borg()
 
 
 <Provide a screenshot of the new coverage results>
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122389621/f12cd7cb-e94f-41b7-8c63-f2ca462c5bf6)
 
 
@@ -363,6 +364,7 @@ https://github.com/Deniz-ME/nikola/commit/cc7ea00b49b4bb9b387bd50b93e9a1ba51eb60
 
 
 <Provide a screenshot of the new coverage results>
+    
 ![image](https://github.com/Deniz-ME/nikola/assets/122389621/00a40c46-b8a8-43c4-a552-ebb6c3a44af8)
 
 
