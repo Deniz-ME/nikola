@@ -235,9 +235,10 @@ when we run the function with our function we see that all the branches get hit
 The branch coverage went from 25 % to 100 % as all the branches are now hit.
 We also see that the total coverage file went from 78% to 82% so that got improved because more lines are covered now.
 
-<Group member name>
 
-Deniz Erdogan
+
+
+Group member name: Deniz Erdoğan
 
 <Test 1>
     
