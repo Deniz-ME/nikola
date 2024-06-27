@@ -313,27 +313,25 @@ The coverage improvement went up by 20%, so it is now 80%. Every branch except t
 
 
 
-ILyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaas
 
 
 
-
-
-
-
+Ilyaas Wardere
 
 <Test 1>
 test_utils.py:
 test_not_self_translated()
 test_get_lang_locale_borg()
+
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
+
 	https://github.com/Deniz-ME/nikola/commit/6bc2853b91c2e1c705a6f3e075dbaffe2dcf3579
 
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
 ![image](https://github.com/Deniz-ME/nikola/assets/122389621/b82dbec4-75ca-4a24-882b-919a04c894b8)
 
 
-<Provide a screenshot of the new coverage results>
+<Provide a screenshot of the new coverage results
 
 ![image](https://github.com/Deniz-ME/nikola/assets/122389621/f12cd7cb-e94f-41b7-8c63-f2ca462c5bf6)
 
@@ -341,6 +339,7 @@ test_get_lang_locale_borg()
 
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
 Since only one of the 5 branches was hit originally, the coverage was at 20%. After the changes we cover 4 of the 5 branches which makes the coverage 80%. The coverage was improved by adding 2 new test functions that enter the branches that weren’t hit. The first function enters the eilf branch by setting self.lang to false and make sure to not add a translation. This should return the default language which is english and we assert that. The second function enters the else branch and the try branch. We make sure the first two branches aren’t hit by setting our own language. The language is set to french and we ensure this happens correctly by checking if the language is indeed french.
+    
 <Test 2>
 	test_archive_per_day.py:
 	test_star_whitelist()
@@ -348,8 +347,11 @@ Since only one of the 5 branches was hit originally, the coverage was at 20%. Af
 	test_not_in_whitelist()
 	test_in_whitelist()
 	test_last_if()
+ 
 <Provide the same kind of information provided for Test 1>
+
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the new/enhanced test>
+
 https://github.com/Deniz-ME/nikola/commit/49872c74c88aa455d825bba39a9988ff2233aba4
 
 https://github.com/Deniz-ME/nikola/commit/701c4c09f1aca62dbf6fbfa35a193203728e9033
@@ -363,7 +365,7 @@ https://github.com/Deniz-ME/nikola/commit/cc7ea00b49b4bb9b387bd50b93e9a1ba51eb60
 
 
 
-<Provide a screenshot of the new coverage results>
+<Provide a screenshot of the new coverage results
     
 ![image](https://github.com/Deniz-ME/nikola/assets/122389621/00a40c46-b8a8-43c4-a552-ebb6c3a44af8)
 
