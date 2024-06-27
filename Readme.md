@@ -63,9 +63,11 @@ human_time(self, dt) in the CommandStatus class
 <Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements>
 https://github.com/getnikola/nikola/commit/b16a7a8dcbdf59978db7d1f6a4fa6c4c490485c5
 
-<Provide a screenshot of the coverage results output by the instrumentation>
+<Provide a screenshot of the coverage results output by the instrumentation
+
 Before I added a test there was no test for this function. As can be seen when running this line (this is when I run all the tests without the test I added) :
 (for some the image via markdown doesn't work and the link has to be clicked for example this one:)
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/8247db58-fae6-4313-9f04-f5a7b0db9ad1)
 
 	We see in this screenshot that lines 170 to 183 were missed
