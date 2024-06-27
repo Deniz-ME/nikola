@@ -72,12 +72,17 @@ Before I added a test there was no test for this function. As can be seen when r
 
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/8247db58-fae6-4313-9f04-f5a7b0db9ad1)
 
-	We see in this screenshot that lines 170 to 183 were missed
+We see in this screenshot that lines 170 to 183 were missed
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/0b2d42a6-0dba-4a50-8db4-afb09805b2c7)
-We can see in this screenshot that these are all the lines of the human_time function 	so we can conclude that this function isn’t being tested yet
+
+We can see in this screenshot that these are all the lines of the human_time function so we can conclude that this function isn’t being tested yet
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/b2d094db-21a3-406a-b37a-45f6a87f6e4e)
+
 To still show the instrumentation with our report_coverage function we just need to call the function manually ourselves and it should show that no branch is being hit as of right now (because it didn’t get tested).
 doing this we get this as expected: 
+
 ![image](https://github.com/Deniz-ME/nikola/assets/122440225/c03f3993-1f0f-4b69-a52e-b44fa2fd2771)
 
 
