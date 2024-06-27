@@ -386,8 +386,13 @@ Originally only one of the seven branches were hit. This makes the original cove
 
 <Provide a screenshot of the old coverage results by running an existing tool (the same as you already showed above)>
 
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/39a98ce3-1412-47f2-a385-1c072c6c5ac0)
 
-<Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group>
+
+<Provide a screenshot of the new coverage results by running the existing tool using all test modifications made by the group
+
+![image](https://github.com/Deniz-ME/nikola/assets/122368681/7da4c80c-4b3c-40e0-b4d8-d2c8b2cf8aa3)
+
 
 We got an improvement of 1% over the whole project
 
