@@ -182,7 +182,7 @@ In the old coverage, none of the branches are reached in the original test, this
 We added a new test which does so and also passes the new flag ‘old’ to force reach the branch for outdated versions. 
 After updating the tests, we have fully covered the file version.py (thus the method too). The print statements before the branch coverage prints further confirm that the branches are hit.
 
-<Darian Samsoedien>
+Darian Samsoedien
 
 <test_human.py>
 
