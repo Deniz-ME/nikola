@@ -129,6 +129,7 @@ Function 1 name: get_lang(self)
 Show a patch (diff) or a link to a commit made in your forked repository that shows the instrumented code to gather coverage measurements: https://github.com/Deniz-ME/nikola/commit/e5537fd73bfb17c3a914b7d633fe628f58834548
 
 Provide a screenshot of the coverage results output by the instrumentation
+![image](https://github.com/Deniz-ME/nikola/assets/122389621/dff95215-a9ae-4bac-9e48-25cf2e61efb1)
 
 	
 <Function 2 name>
@@ -136,6 +137,7 @@ Provide a screenshot of the coverage results output by the instrumentation
 <Provide the same kind of information provided for Function 1>
 
 https://github.com/Deniz-ME/nikola/commit/e1321a03fbce2444770d65cc31b3d0f09a9db4d9
+![image](https://github.com/Deniz-ME/nikola/assets/122389621/0fc5882d-cff6-441d-b8d8-441f00c4ee5e)
 
 .
 
@@ -328,9 +330,11 @@ test_get_lang_locale_borg()
 	https://github.com/Deniz-ME/nikola/commit/6bc2853b91c2e1c705a6f3e075dbaffe2dcf3579
 
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
+![image](https://github.com/Deniz-ME/nikola/assets/122389621/b82dbec4-75ca-4a24-882b-919a04c894b8)
 
 
 <Provide a screenshot of the new coverage results>
+![image](https://github.com/Deniz-ME/nikola/assets/122389621/f12cd7cb-e94f-41b7-8c63-f2ca462c5bf6)
 
 
 
@@ -349,12 +353,17 @@ https://github.com/Deniz-ME/nikola/commit/49872c74c88aa455d825bba39a9988ff2233ab
 
 https://github.com/Deniz-ME/nikola/commit/701c4c09f1aca62dbf6fbfa35a193203728e9033
 (small name change)
+https://github.com/Deniz-ME/nikola/commit/cc7ea00b49b4bb9b387bd50b93e9a1ba51eb60f1
+(last asserts)
+
 <Provide a screenshot of the old coverage results (the same as you already showed above)>
+![image](https://github.com/Deniz-ME/nikola/assets/122389621/d8a76b14-b86a-443c-8ead-0b8e0d021560)
 
 
 
 
 <Provide a screenshot of the new coverage results>
+![image](https://github.com/Deniz-ME/nikola/assets/122389621/00a40c46-b8a8-43c4-a552-ebb6c3a44af8)
 
 
 <State the coverage improvement with a number and elaborate on why the coverage is improved>
